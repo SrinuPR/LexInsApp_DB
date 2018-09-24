@@ -577,16 +577,16 @@ add column user_id  int not null after login_id;
 alter table mydb.lis_login
 add column subscriber_id int not null after user_id
 
-alter table mydb.lis_umacs
+alter table mydb.lis_login
 add column created_timestamp timestamp not null after subscriber_id;
 
-alter table mydb.lis_umacs
+alter table mydb.lis_login
 add column created_by varchar(50) not null after created_timestamp;
 
-alter table mydb.lis_umacs
+alter table mydb.lis_login
 add column updated_timestamp timestamp after created_by;
 
-alter table mydb.lis_umacs
+alter table mydb.lis_login
 add column updated_by varchar(50) after updated_timestamp; 
 
 
