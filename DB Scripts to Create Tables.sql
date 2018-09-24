@@ -575,7 +575,7 @@ alter table mydb.lis_login
 add column user_id  int not null after login_id; 
 
 alter table mydb.lis_login
-add column subscriber_id int not null after user_id
+add column subscriber_id int not null after user_id;
 
 alter table mydb.lis_login
 add column created_timestamp timestamp not null after subscriber_id;
