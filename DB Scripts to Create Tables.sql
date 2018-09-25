@@ -592,7 +592,9 @@ add column updated_timestamp timestamp after created_by;
 alter table mydb.lis_login
 add column updated_by varchar(50) after updated_timestamp; 
 
-
+--creating sequence for login_id
+ ALTER TABLE `mydb`.`lis_login` 
+CHANGE COLUMN `login_id` `login_id` INT(11) NOT NULL AUTO_INCREMENT ; 
 
 
   
