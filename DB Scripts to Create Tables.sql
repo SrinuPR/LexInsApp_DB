@@ -576,9 +576,12 @@ add column user_id  int not null after login_id;
 
 alter table mydb.lis_login
 add column subscriber_id int not null after user_id;
+ 
+alter table mydb.lis_login
+add column password varchar(30) not null after subscriber_id;
 
 alter table mydb.lis_login
-add column created_timestamp timestamp not null after subscriber_id;
+add column created_timestamp timestamp not null after password;
 
 alter table mydb.lis_login
 add column created_by varchar(50) not null after created_timestamp;
