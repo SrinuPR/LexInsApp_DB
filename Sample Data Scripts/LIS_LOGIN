@@ -1,7 +1,3 @@
 --Please consider running alter table statement in LIS_LOGIN table if ur table structure doesn't show login_password field before running these scrips.
 
-insert into mydb.lis_login values (101, 'Password@1', 10035, 1001, sysdate(), 'admin',null,null);
-insert into mydb.lis_login values (102, 'Password@1', 10036, 1001, sysdate(), 'admin',null,null);
-insert into mydb.lis_login values (103, 'Password@1', 10037, 1001, sysdate(), 'admin',null,null);
-insert into mydb.lis_login values (104, 'Password@1', 10038, 1001, sysdate(), 'admin',null,null);
-insert into mydb.lis_login values (105, 'Password@1', 10039, 1001, sysdate(), 'admin',null,null);
+insert into mydb.lis_login(LOGIN_ID,USER_ID,PASSWORD,SUBSCRIBER_ID,CREATED_TIMESTAMP,CREATED_BY,UPDATED_BY,UPDATED_TIMESTAMP) values (11,1111,'JXCnMnnIa480b3N3jTO24w==', 1000, sysdate(),'admin',null,null);
