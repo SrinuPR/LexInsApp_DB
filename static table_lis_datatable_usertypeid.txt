@@ -40,4 +40,4 @@ INSERT INTO mydb.lis_datatable_usertypeid
 
 INSERT INTO mydb.lis_datatable_usertypeid 
 (user_type_id,user_type_name,active_sw,eff_start_dt,eff_end_dt) values
-('007', 'Director', 'Y', sysdate(),sysdate);
+('007', 'Director', 'Y', sysdate(),sysdate());
