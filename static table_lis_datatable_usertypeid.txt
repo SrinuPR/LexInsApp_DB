@@ -1,43 +1,97 @@
-CREATE TABLE `mydb`.`lis_datatable_usertypeid` (
+
+USE LEX_INS_APP;
+
+
+
+CREATE TABLE `lis_datatable_usertypeid` (
+
   `user_type_id` VARCHAR(10) NOT NULL,
+
   PRIMARY KEY (`user_type_id`));
 
-alter table mydb.lis_datatable_usertypeid
+
+
+alter table lis_datatable_usertypeid
+
 add column user_type_name  varchar(50) not null after user_type_id;
 
-alter table mydb.lis_datatable_usertypeid
+
+
+alter table lis_datatable_usertypeid
+
 add column active_sw  varchar(10) not null after user_type_name;
 
-alter table mydb.lis_datatable_usertypeid
+
+
+alter table lis_datatable_usertypeid
+
 add column eff_start_dt  timestamp not null after active_sw;
 
-alter table mydb.lis_datatable_usertypeid
+
+
+alter table lis_datatable_usertypeid
+
 add column eff_end_dt  timestamp not null after eff_start_dt;
 
-INSERT INTO mydb.lis_datatable_usertypeid 
-(user_type_id,user_type_name,active_sw,eff_start_dt,eff_end_dt) values
-('000', 'System Admin', 'Y', sysdate(),sysdate());
 
-INSERT INTO mydb.lis_datatable_usertypeid 
-(user_type_id,user_type_name,active_sw,eff_start_dt,eff_end_dt) values
-('001', 'App Developer', 'Y', sysdate(),sysdate());
 
-INSERT INTO mydb.lis_datatable_usertypeid 
-(user_type_id,user_type_name,active_sw,eff_start_dt,eff_end_dt) values
-('003', 'Operator', 'Y', sysdate(),sysdate());
+INSERT INTO lis_datatable_usertypeid 
 
-INSERT INTO mydb.lis_datatable_usertypeid 
 (user_type_id,user_type_name,active_sw,eff_start_dt,eff_end_dt) values
-('004', 'nspector', 'Y', sysdate(),sysdate());
 
-INSERT INTO mydb.lis_datatable_usertypeid 
-(user_type_id,user_type_name,active_sw,eff_start_dt,eff_end_dt) values
-('005', 'Supervisor', 'Y', sysdate(),sysdate());
+('0', 'System Admin', 'Y', sysdate(),sysdate());
 
-INSERT INTO mydb.lis_datatable_usertypeid 
-(user_type_id,user_type_name,active_sw,eff_start_dt,eff_end_dt) values
-('006', 'Manager', 'Y', sysdate(),sysdate());
 
-INSERT INTO mydb.lis_datatable_usertypeid 
+
+INSERT INTO lis_datatable_usertypeid 
+
 (user_type_id,user_type_name,active_sw,eff_start_dt,eff_end_dt) values
-('007', 'Director', 'Y', sysdate(),sysdate());
+
+('1', 'App Developer', 'Y', sysdate(),sysdate());
+
+
+
+INSERT INTO lis_datatable_usertypeid 
+
+(user_type_id,user_type_name,active_sw,eff_start_dt,eff_end_dt) values
+
+('2', 'Mobile App Developer', 'Y', sysdate(),sysdate());
+
+
+INSERT INTO lis_datatable_usertypeid 
+
+(user_type_id,user_type_name,active_sw,eff_start_dt,eff_end_dt) values
+
+('3', 'Operator', 'Y', sysdate(),sysdate());
+
+
+
+INSERT INTO lis_datatable_usertypeid 
+
+(user_type_id,user_type_name,active_sw,eff_start_dt,eff_end_dt) values
+
+('4', 'Inspector', 'Y', sysdate(),sysdate());
+
+
+
+INSERT INTO lis_datatable_usertypeid 
+
+(user_type_id,user_type_name,active_sw,eff_start_dt,eff_end_dt) values
+
+('5', 'Supervisor', 'Y', sysdate(),sysdate());
+
+
+
+INSERT INTO lis_datatable_usertypeid 
+
+(user_type_id,user_type_name,active_sw,eff_start_dt,eff_end_dt) values
+
+('6', 'Manager', 'Y', sysdate(),sysdate());
+
+
+
+INSERT INTO lis_datatable_usertypeid 
+
+(user_type_id,user_type_name,active_sw,eff_start_dt,eff_end_dt) values
+
+('7', 'Director', 'Y', sysdate(),sysdate());
