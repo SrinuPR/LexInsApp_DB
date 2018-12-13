@@ -344,7 +344,26 @@ CREATE TABLE `LIS_IMDES` (
     );
 
 
+CREATE TABLE `LIS_ACMDS` (
 
+
+  `SUBSCRIBER_ID` int(5) NOT NULL,
+
+  `USER_TYPE_ID` int(3) NOT NULL,
+
+  `CREATED_TIMESTAMP` timestamp NOT NULL,
+
+  `CREATED_BY` varchar(50) NOT NULL,
+
+  `UPDATED_TIMESTAMP` timestamp NULL DEFAULT NULL,
+
+  `UPDATED_BY` varchar(50) DEFAULT NULL,
+ 
+   `SCREEN_NO` varchar(500) DEFAULT NULL
+   
+
+)
+ ;
 
 
 
